@@ -25,7 +25,7 @@ $(function() {
             username: $("#registered [name=username]").val(),
             password: $("#registered [name=password]").val()
         }
-        $.post('http://www.liulongbin.top:3007/api/reguser', data, function(res) {
+        $.post('/api/reguser', data, function(res) {
             if (res.status !== 0) {
                 return layer.msg(res.message)
             }
@@ -42,7 +42,7 @@ $(function() {
         }
         $.ajax({
             method: "POST",
-            url: "http://www.liulongbin.top:3007/api/login",
+            url: "/api/login",
             data: data,
             success: function(res) {
                 if (res.status !== 0) {
