@@ -1,0 +1,63 @@
+html {
+    background: url(../images/login_bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 1500px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+.login {
+    height: 310px;
+    width: 400px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.gocreate {
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px
+}
+
+.title {
+    text-align: center;
+    line-height: 60px
+}
+
+#registered {
+    display: none
+}
+
+.layui-form {
+    padding: 0 30px;
+    font-size: 16px
+}
+
+.layui-form-item {
+    position: relative;
+}
+
+.layui-form-item i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%)
+}
+
+.layui-form-item input {
+    padding-left: 30px;
+    font-size: 14px
+}
